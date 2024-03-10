@@ -1,0 +1,376 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+	
+}
+
+header img{
+	width:80px;
+	height:80px;
+	
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+	
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #FF4500;
+}
+
+nav a:hover {
+    background-color: #FF6347;
+}
+
+.signup-container {
+    margin-top: 150px; /* Adjust as needed */
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+}
+
+.signup-container form {
+    display: inline-block;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.signup-container form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signup-container form input[type="text"],
+.signup-container form input[type="email"],
+.signup-container form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container form input[type="submit"] {
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container form input[type="submit"]:hover {
+    background-color: #FF6347;
+}
+
+
+.banner {
+    text-align: center;
+    padding: 350px 0;
+    background-image: url('image 10.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.signup-button {
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #FF6347;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.background-container{
+	background-image: url('image 5.jpg'); /* Adjust the path to your background image */
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.about-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+	text-align: center;
+}
+
+.profile-background {
+    background-image: url('image 4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF6347;
+}
+
+.training-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.option {
+    display: inline-block;
+    margin: 75px;
+    text-align: center;
+	padding: 10px 20px;
+}
+
+.option a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.option img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 2px solid #007bff; 
+    transition: transform 0.3s ease; 
+}
+
+.option img:hover {
+    transform: scale(1.1); 
+}
+
+.option p {
+    font-size: 1.2em;
+	font-family: Arial;
+    margin-top: 10px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 90px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.workouts-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 50px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.workouts-container h2 {
+    margin-bottom: 20px;
+}
+
+.workouts-container p {
+    margin-bottom: 20px;
+	
+}
+
+.workouts-container h3 {
+    margin-bottom: 20px;
+}
+
+.workouts-container li{
+	text-decoration: bold;
+}
+.workouts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workouts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.workouts-table th,
+.workouts-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.workouts-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+
+	
+}

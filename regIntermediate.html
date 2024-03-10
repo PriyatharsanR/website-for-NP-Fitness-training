@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration - Intermediate Level</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body class="profile-background">
+		<header>
+			<nav>
+				<a href="project.html#home">Home</a>
+				<a href="aboutUs.html">About Us</a>
+				<a href="training.html">Training</a>
+				<a href="project.html#contact">Contact</a>
+			</nav>
+		</header>
+
+		<div class="profile-container">
+			<h2>Registration for - Intermediate Level</h2>
+			<p> Fill correct details in below form </p>
+			<br>
+			<form action="intermediate.html" method="POST">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required><br>
+
+				<label for="age">Age:</label><br>
+				<input type="number" id="age" name="age" required><br>
+
+				<label for="gender">Gender:</label><br>
+				<select id="gender" name="gender" required >
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select><br>
+
+				<label for="contact">Contact (Email or Phone):</label><br>
+				<input type="text" id="contact" name="contact" required><br>
+
+				<label for="height">Height (in cm):</label><br>
+				<input type="number" id="height" name="height" required><br>
+
+				<label for="weight">Weight (in kg):</label><br>
+				<input type="number" id="weight" name="weight" required><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<footer>
+			<p>&copy; 2024 NP Fitness. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
