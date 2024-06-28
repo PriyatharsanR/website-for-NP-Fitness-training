@@ -49,7 +49,8 @@ body {
   outline: none;
   border: none;
   font-size: 16px;
-  color: var(--white);
+  font-weight: bold;
+  color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 10px;
   cursor: pointer;
@@ -59,6 +60,7 @@ body {
 
 .btn:hover {
   background-color: var(--secondary-color-dark);
+  color: #fff;
 }
 
 img {
@@ -88,11 +90,15 @@ nav {
 }
 
 .nav__logo {
-  max-width: 200px;
+  max-width: 240px;
   font-family: Arial;
   color: var(--secondary-color);
   font-size: 32px;
   font-weight: bold;
+}
+
+.nav__logo i{
+  color: orange;
 }
 
 .nav__links {
@@ -198,6 +204,7 @@ nav {
   margin: auto;
 }
 
+
 /*--- Program ---*/
 .explore__header {
   display: flex;
@@ -277,6 +284,67 @@ nav {
 .explore__card a:hover {
   color: var(--secondary-color);
 }
+
+
+/*-------- about -----*/
+.about__container {
+  display: grid;
+  gap: 2rem;
+  background-color: var(--white);
+  margin-bottom: 16px;
+}
+
+.about__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.about__image img {
+  max-width: 500px;
+  margin: auto;
+}
+
+.about__image .about__bg {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+  max-width: 250px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.about__grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.about__card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about__card span {
+  padding: 11px 19px;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 100%;
+}
+
+.about__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.about__card p {
+  color: #64748b;
+}
+
+
 
 /*--- Contact ---*/
 .contact{
@@ -418,13 +486,14 @@ nav {
 	font-size: 18px;
 }
 
+
+
 /*--- workout ---*/
 .workout_container {
   background-color: white;
   padding: 20px;
   text-align: center; 
 }
-
 
 .workout {
   background-color: var(--primary-color-light);
@@ -529,8 +598,9 @@ nav {
 	border-color:transparent;
 }
 
-/*--- Gallery ---*/
 
+
+/*--- Gallery ---*/
 .gallery{
   width: 100%;
   margin: auto;
@@ -585,7 +655,6 @@ nav {
 }
 
 .gallery-col img:hover{
-
   transform: scale(1.5);
 }
 
@@ -606,8 +675,21 @@ h3{
   }
 }
 
-/*--- Footer ---*/
+@media (width > 768px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
+  .about__grid {
+    gap: 3rem;
+  }
+}
+
+
+
+
+/*--- Footer ---*/
 .footer__container {
   position: relative;
   display: grid;
@@ -628,6 +710,10 @@ h3{
 .footer__col p {
   margin-bottom: 2rem;
   color: var(--text-light);
+}
+
+.footer__col h2{
+  color: var(--secondary-color);
 }
 
 .footer__socials {
@@ -670,8 +756,9 @@ h3{
 
 .footer__bar {
   max-width: var(--max-width);
+  text-align: center;
   margin: auto;
-  padding: 1rem;
-  font-size: 0.8rem;
+  padding: 15px;
+  font-size: 14px;
   color: var(--white);
 }

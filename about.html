@@ -8,65 +8,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
         <title>NP Fitness</title>
         
-        <style>
-            header {
-            background-image: url('Image/pic4.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 0;
-            text-align: center;
-            color: #fff;
-            }
-
-            .header-content {
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 20px;
-                border-radius: 10px;
-                max-width: 800px;
-                margin: 0 auto;
-            }
-
-            h1 {
-                margin: 0;
-                font-size: 56px;
-            }
-
-            h1:hover{
-                color: orange;
-            }
-
-            p {
-                margin: 20px 0;
-                font-size: 19px;
-                text-align: justify;
-                color: white;
-            }
-
-            section {
-                width: 80%;
-                margin: 20px auto;
-                padding: 40px;
-                background-color: #1f2125;
-                margin-bottom: 20px;
-                border-radius: 10px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            }
-
-            section h2 {
-                color: #22f007;
-            }
-
-            section:hover{
-                background-color: #35373b;
-                border: 2px solid #22f007;
-            }
-
-            
-        </style>
+        
     </head>
     <body>
         <nav>
-            <div class="nav__logo">NP FITNESS</div>
+            <div class="nav__logo"><i class="fa-solid fa-dumbbell"></i> NP FITNESS</div>
             <ul class="nav__links">
                 <li class="link"><a href="index.html">Home</a></li>
                 <li class="link"><a href="program.html">Program</a></li>
@@ -76,19 +22,53 @@
             
         </nav>
 
-        <header>
-            <div class="header-content">
-                <h1>Welcome to NP FITNESS</h1>
+        <section class="section__container about__container" id="about">
+            <div class="about__image">
+              <img class="about__bg" src="Image/dot-bg.png" alt="bg" />
+              <img src="Image/about.png" alt="about" />
             </div>
-        </header>
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>Our mission is simple: to help you become the best version of yourself. We're committed to providing unparalleled fitness experiences, fostering a sense of community, and promoting a holistic approach to health and wellness. Through personalized guidance, innovative programs, and a motivating atmosphere, we strive to empower you to surpass your limits and achieve your aspirations.</p>
-        </section>
-        <section id="facilities">
-            <h2>Our Facilities</h2>
-            <p>Step into our world-class facility and embark on a journey towards optimal health and vitality. Equipped with the latest in fitness technology and amenities, our gym offers everything you need to elevate your workouts.</p>
-        </section>
+            <div class="about__content">
+              <h2 class="section__header" style="color: #0f172a;">Our Story</h2>
+              <p class="section__description">
+                Led by our team of expert and motivational instructors, "The Class You
+                Will Get Here" is a high-energy, results-driven session that combines
+                a perfect blend of cardio, strength training, and functional
+                exercises.
+              </p>
+              <div class="about__grid">
+                <div class="about__card">
+                  <span><i class="ri-open-arm-line"></i></span>
+                  <div>
+                    <h4>Open Door Policy</h4>
+                    <p>
+                      We believe in providing unrestricted access to all individuals,
+                      regardless of their fitness level, age, or background.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <span><i class="ri-shield-cross-line"></i></span>
+                  <div>
+                    <h4>Fully Insured</h4>
+                    <p>
+                      Your peace of mind is our top priority, and our commitment to
+                      your safety extends to every aspect of your fitness journey.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <span><i class="ri-p2p-line"></i></span>
+                  <div>
+                    <h4>Personal Trainer</h4>
+                    <p>
+                      With personalized workout plans tailored to your needs, we will
+                      ensure that you get the most out of your gym experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126100.25775436914!2d79.74228858947757!3d9.005871505408086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afdd9e40ae65ad1%3A0xd23b88e6d0249975!2sMannar!5e0!3m2!1sta!2slk!4v1713007762621!5m2!1sta!2slk" width="100%" height="450" style="border:2px; border-color: blue;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -98,7 +78,7 @@
             <span class="bg__blur footer__blur"></span>
             
             <div class="footer__col">
-              <h2 style="color: orangered;">NP FITNESS</h2>
+              <h2 >NP FITNESS</h2>
               <p>
                 Take the first step towards a healthier, stronger you with our
                 unbeatable pricing plans. Let's sweat, achieve, and conquer together!
