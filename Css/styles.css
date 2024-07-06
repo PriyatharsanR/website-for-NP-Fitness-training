@@ -538,30 +538,44 @@ nav {
 
 /*--- Services ---*/
 .service_container {
-  background-color: white;
+  background-color: var(--primary-color);
   padding: 20px;
   text-align: center; 
 }
 
 .service_container p{
+  color: var(--text-light);
   text-align: justify;
   padding: 15px;
   font-size: 17px;
 }
 
+#service_p{
+  text-align: center; 
+  font-weight: bold; 
+  color: #036303fd;
+}
+
+#service_p:hover{
+  color: orange;
+}
+
 .service_container h1{
-  color: orangered;
+  color: var(--white);
 }
 
 .service_container h3{
+  color: #22f007;
   text-align: left;
   padding: 15px;
 }
 
 .service_container img{
   width: 500px;
+  border-radius: 10px;
   margin: 0 auto;
 }
+
 
 .service_container span{
   font-size: 20px;
@@ -570,6 +584,7 @@ nav {
 }
 
 .table{
+  background-color: var(--white);
   margin: 0 auto;
 	width: 80%;
 	border-collapse: collapse;
@@ -759,6 +774,9 @@ h3{
   text-align: center;
   margin: auto;
   padding: 15px;
-  font-size: 14px;
-  color: var(--white);
+  font-size: 16spx;
+  color: var(--secondary-color);
+  
 }
+
+
