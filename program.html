@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+        <script src="Js/script3.js"></script>
         <link rel="stylesheet" href="Css/styles.css"  />
 
-        <title>NP Fitness</title>
+        <title>Program - NP Fitness</title>
         <style>
           .section_container {
             max-width: var(--max-width);
@@ -224,31 +225,5 @@
               Copyright © 2024 NP FITNESS. All rights reserved by R Priyatharsan.
             </div>
 
-            <script>
-              $(document).ready(function(){
-                $('.buttons').click(function(){
-                    $(this).addClass('active').siblings().removeClass('active');
-
-                    var filter = $(this).attr('data-filter')
-
-                    if(filter == 'all'){
-                      $('.image').show(400);
-                    }
-                    else{
-                      $('.image').not('.'+filter).hide(200);
-                      $('.image').filter('.'+filter).show(400);
-                    }
-
-                  });
-
-                  $('.gallery').magnificPopup({
-                    delegate: 'a',
-                    type: 'image',
-                    gallery:{
-                      enabled:true
-                    }
-                  });
-              });
-            </script>
     </body>
 </html>
